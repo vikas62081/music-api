@@ -1,12 +1,12 @@
 const mongoose = require("mongoose");
 
-const songSchema = mongoose.Schema({
+const bookSchema = mongoose.Schema({
     title: String,
     author: String,
-    price: Number,
+    price: String,
     genre: String
 })
 
-const bookModel = mongoose.model('Books', songSchema)
+const bookModel = mongoose.model('Books', bookSchema)
 
 module.exports = bookModel
