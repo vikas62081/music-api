@@ -5,7 +5,7 @@ const getAllBooks = async (req, res) => {
 }
 
 const createBook = async (req, res) => {
-    const book = new songModel(req.body)
+    const book = new bookModel(req.body)
     try {
         res.status(201).json(await book.save())
     } catch (err) {
